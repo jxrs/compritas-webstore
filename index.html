@@ -1,0 +1,172 @@
+<!doctype html>
+<html data-ng-app="adminlte" data-ng-controller="BaseController as vmBase">
+
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-signin-client_id" content="390235103351-l36n1077ds87043e1d3ajbnm57m91v18.apps.googleusercontent.com">
+    <title>Librería de Arte </title>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/css/vendor.min.css">
+    <!-- endbower:css -->
+    <!-- endbuild -->
+    <!-- build:css({.tmp/serve,src}) styles/app.css -->
+    <!-- app:css -->
+    <link rel="stylesheet" href="/css/app.min.css">
+    <!-- endapp:css -->
+    <!-- endbuild -->
+    <!-- Google Font -->
+
+     <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <script data-ad-client="ca-pub-3139109812633422" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://kit.fontawesome.com/0345a90d72.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@1.5.7/dist/lottie-player.js"></script>
+
+</head>
+<body class="hold-transition skin-white layout-top-nav">
+    <iframe id='cardinal_collection_iframe' name='collectionIframe' height='1'
+    width='1' style='display: none;'></iframe>
+<form id='cardinal_collection_form' method='POST' target='collectionIframe'
+  action="https://centinelapi.cardinalcommerce.com/V1/Cruise/Collect">
+<input id='cardinal_collection_form_input' type='hidden' name='JWT'
+       value='$jwt$'>
+</form>
+    <!--[if lt IE 10]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+        your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div ui-view="main"></div>
+    <!-- build:js(src) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/scripts/vendor.min.js"></script>
+    <!-- endbower:js -->
+    <!-- endbuild -->
+    <!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js -->
+    <!-- app:js -->
+    <script src="/scripts/app.min.js"></script>
+    <!-- endapp:js -->
+    <script src="https://cdn.jsdelivr.net/g/jquery@1,jquery.ui@1.10%28jquery.ui.core.min.js+jquery.ui.widget.min.js+jquery.ui.mouse.min.js+jquery.ui.sortable.min.js%29"></script>
+
+    <script src="https://cdn.jsdelivr.net/g/angular.ui-sortable"></script>
+
+
+    <link rel="stylesheet" ; href="https://unpkg.com/ng-table@2.0.2/bundles/ng-table.min.css">
+
+    <script src="https://admin.compritasexpress.com/vendor/jquery-3.3.1.min.js"></script>
+    <script src="https://admin.compritasexpress.com/vendor/jquery.signalR-2.2.2.min.js"></script>
+    <script src="https://api.compritasexpress.com/signalr/hubs"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfvuzenBcxsWBlhrmqH3UOdcxaK_Ztrhs&sensor=true&libraries=,visualization,drawing,geometry,places" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angularjs-google-maps/1.18.5/ng-map.min.js"></script>
+
+
+
+    <script src="http://jvandemo.github.io/angularjs-google-maps/dist/angularjs-google-maps.js"></script>
+
+    <script src="https://compritasexpress.com/scripts/clipboard.min.js"></script>
+    <script src="https://unpkg.com/ng-table@2.0.2/bundles/ng-table.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/UAParser.js/0.7.20/ua-parser.min.js" integrity="sha512-70OZ+iUuudMmd7ikkUWcEogIw/+MIE17z17bboHhj56voxuy+OPB71GWef47xDEt5+MxFdrigC1tRDmuvIVrCA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+    <!-- ui parser -->
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/UAParser.js/1.0.2/ua-parser.min.js"></script>
+   
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+    <script type="text/javascript">// Initialize the Firebase SDK
+        var config = {
+            apiKey: 'AIzaSyAD1iiGfOR0Pj3O0NndXX1SJ447cU_HQoc',
+            databaseURL: "https://compritas-express-repartidor.firebaseio.com",
+            storageBucket: "compritas-express-repartidor.appspot.com",
+            messagingSenderId: '440511243993'
+        };
+        firebase.initializeApp(config);</script>
+    <script type="application/javascript">
+        function getIP(json) {
+          <!--document.write("My public IP address is: ", json.ip);-->
+        document.write('<input type="hidden" id="publicIp" name="publicIp" value="' + json.ip + '">');
+        }
+    </script>
+    <script type="text/javascript">function getFingerPrint() {
+            var valueReceived = document.getElementById("deviceFingerprintID").value;
+            JSBridge.postMessage(valueReceived);
+        }
+        function cybs_dfprofiler(merchantID, environment) {
+
+            if (environment.toLowerCase() == 'live') {
+                var org_id = 'k8vif92e';
+            } else {
+                var org_id = '1snn5n9w';
+            }
+
+            var sessionID = new Date().getTime();
+
+            //One-Pixel Image Code
+            var paragraphTM = document.createElement("p");
+            str = "";
+            str = "background:url(https://h.online-metrix.net/fp/clear.png?org_id=" + org_id + "&session_id=" + merchantID + sessionID + "&m=1)";
+
+            paragraphTM.styleSheets = str;
+
+            document.body.appendChild(paragraphTM);
+
+            var img = document.createElement("img");
+
+            str = "https://h.online-metrix.net/fp/clear.png?org_id=" + org_id + "&session_id=" + merchantID + sessionID + "&m=2";
+
+            img.src = str;
+            img.alt = "";
+
+            document.body.appendChild(img);
+
+            //Flash Code
+            var objectTM = document.createElement("object");
+
+            objectTM.data = "https://h.online-metrix.net/fp/fp.swf?org_id=" + org_id + "&session_id=" + merchantID + sessionID;
+
+            objectTM.type = "application/x-shockwave-flash";
+            objectTM.width = "1";
+            objectTM.height = "1";
+            objectTM.id = "thm_fp";
+
+            var param = document.createElement("param");
+            param.name = "movie";
+
+            param.value = "https://h.online-metrix.net/fp/fp.swf?org_id=" + org_id + "&session_id=" + merchantID + sessionID;
+
+            objectTM.appendChild(param);
+
+            document.body.appendChild(objectTM);
+
+            //JavaScript Code
+            var tmscript = document.createElement("script");
+
+            tmscript.src = "https://h.online-metrix.net/fp/tags.js?org_id=" + org_id + "&session_id=" + merchantID + sessionID;
+
+            tmscript.type = "text/javascript";
+
+            document.body.appendChild(tmscript);
+            //alert(sessionID);
+            return sessionID;
+
+        }</script>
+         <script>document.write('<input type="hidden" id="fingerprintId" name="fingerprintId" value="' + fingerprint_canvas() + '">');</script>
+    <script>document.write('<input type="hidden" id="deviceFingerprintID" name="deviceFingerprintID" value="' + cybs_dfprofiler("tc_ni_001584878", "live") + '">');</script>
+    <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+</body>
+</html>
